@@ -1,12 +1,17 @@
-.footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-    background-color: aqua;
-  }
-  
-  .footer span {
-    font-size: 1rem;
-    font-weight: 300;
-  }
+.sidenav {
+  background-color: #34a853;
+  width: 200px;
+}
+
+.sidenav a {
+  color: #fff;
+}
+
+.sidenav i {
+  padding-right: 10px;
+}
+
+.content {
+  padding: 16px;
+  background-color: #fff;
+}

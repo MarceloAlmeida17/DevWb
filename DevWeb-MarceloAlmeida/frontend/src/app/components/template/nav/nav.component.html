@@ -1,6 +1,23 @@
-<mat-toolbar class="footer">
-    <span>
-      Desenvolvido com <strong> Angular e Material </strong>
-      <i class="material-icons red v-middle">favorite</i>
-    </span>
-  </mat-toolbar>
+<mat-sidenav-container class="container">
+  <mat-sidenav
+    class="sidenav"
+    mode="side"
+    opened
+    fixedInViewport="true"
+    fixedTopGap="64"
+  >
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="/">
+        <i class="material-icons"> home </i>
+        Home
+      </a>
+      <a mat-list-item routerLink="/payments">
+        <i class="material-icons"> favorite </i>
+        Pagamento
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet> </router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
